@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        div.con {
+            background-image: url(resource/wallpaper.jpg);
+            padding: 80px;
+        }
+
+        div.ex1 {
+            background-color: lightgreen;
+            border: 2px solid black;
+            padding: 15px;
+        }
+
+        div.ex2 {
+            background-color: transparent;
+            border: 2px solid black;
+            padding: 15px;
+        }
+
+        div.ex3 {
+            color: blue;
+            border: 10px solid currentcolor;
+            padding: 15px;
+        }
+
+        .con2 {
+            color: green;
+        }
+
+        div.ex4 {
+            box-shadow: 0px 0px 15px currentcolor;
+            border: 5px solid currentcolor;
+            padding: 15px;
+        }
+
+        div.ex5 {
+            border: 2px solid red;
+        }
+
+        span {
+            border: inherit;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>The transparent Keyword</h2>
+    <div class="con">
+        <div class="ex1">This div has a light green background.</div>
+        <br>
+        <div class="ex2">This div has a transparent background.</div>
+    </div>
+
+    <h2>The currentcolor Keyword</h2>
+
+    <p>The currentcolor keyword refers to the current value of the color property of an element.</p>
+
+    <div class="ex3">
+        This div element has a blue text color and a blue border.
+    </div>
+
+    <h2>The currentcolor Keyword</h2>
+
+    <div class="con2">
+        <p>This is some text in the body part...</p>
+
+        <div class="ex4">
+            <p>This div's border color and shadow color is set to the current color value of the body element.</p>
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="ex5">Here, the <span>span element's</span> border settings will be inherited from the parent element.
+    </div>
+    <br>
+
+    <div class="ex5" style="border:2px dotted blue;">Here, the <span>span element's</span> border settings will also be
+        inherited from the parent element.</div>
+
+</body>
+
+</html>

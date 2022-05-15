@@ -1,0 +1,96 @@
+<!-- 
+outline-offset	Adds space between an outline and the edge or border of an element
+resize	Specifies whether or not an element is resizable by the user -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div.ex1 {
+  border: 2px solid;
+  padding: 20px; 
+  width: 300px;
+  resize: horizontal;
+  overflow: auto;
+}
+div.ex2 {
+  border: 2px solid;
+  padding: 20px; 
+  width: 300px;
+  resize: vertical;
+  overflow: auto;
+}
+div.ex3 {
+  border: 2px solid;
+  padding: 20px; 
+  width: 300px;
+  resize: both;
+  overflow: auto;
+}
+textarea#test {
+   resize: none;
+}
+
+
+div.ex4 {
+  margin: 20px;
+  border: 1px solid black;
+  outline: 4px solid red;
+  outline-offset: 15px;
+} 
+
+div.ex5 {
+  margin: 10px;
+  border: 1px solid black;
+  outline: 5px dashed blue;
+  outline-offset: 5px;
+} 
+</style>
+</head>
+<body>
+
+<h1>The resize Property</h1>
+
+<div class="ex1">
+  <p>Let the user resize only the width of this div element.</p>
+  <p>To resize: Click and drag the bottom right corner of this div element.</p>
+</div>
+
+
+<h1>The resize Property</h1>
+
+<div class="ex2">
+  <p>Let the user resize only the height of this div element.</p>
+  <p>To resize: Click and drag the bottom right corner of this div element.</p>
+</div>
+
+<h1>The resize Property</h1>
+
+<div class="ex3">
+  <p>Let the user resize both the height and the width of this div element.</p>
+  <p>To resize: Click and drag the bottom right corner of this div element.</p>
+</div>
+
+<h1>The resize Property</h1>
+
+<p>In many browsers, textarea elements are resizable by default. In this example, we have used the resize property to disable the resizability:</p>
+
+<textarea id="test">Textarea - Not resizable</textarea>
+<br><br>
+
+<textarea>Textarea - Resizable (default)</textarea>
+
+<h1>The outline-offset Property</h1>
+
+<div class="ex4">This div has a 4 pixels solid red outline 15 pixels outside the border edge.</div>
+<br>
+
+<div class="ex5">This div has a 5 pixels dashed blue outline 5 pixels outside the border edge.</div>
+
+</body>
+</html>
+
+
+
+
+

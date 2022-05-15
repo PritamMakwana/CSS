@@ -1,0 +1,169 @@
+<!-- align-self	Specifies the alignment for a flex item (overrides the flex container's align-items property)
+flex	A shorthand property for the flex-grow, flex-shrink, and the flex-basis properties
+flex-basis	Specifies the initial length of a flex item
+flex-grow	Specifies how much a flex item will grow relative to the rest of the flex items inside the same container
+flex-shrink	Specifies how much a flex item will shrink relative to the rest of the flex items inside the same container
+order	Specifies the order of the flex items inside the same container -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .flex-container1 {
+            display: flex;
+            align-items: stretch;
+            background-color: #f1f1f1;
+        }
+
+        .flex-container1>div.ex1 {
+            background-color: DodgerBlue;
+            color: white;
+            width: 100px;
+            margin: 10px;
+            text-align: center;
+            line-height: 75px;
+            font-size: 30px;
+        }
+
+        .flex-container2 {
+            display: flex;
+            height: 200px;
+            background-color: #f1f1f1;
+        }
+
+        .flex-container2>div.ex2 {
+            background-color: DodgerBlue;
+            color: white;
+            width: 100px;
+            margin: 10px;
+            text-align: center;
+            line-height: 75px;
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>The order Property</h1>
+
+    <p>Use the order property to sort the flex items as you like:</p>
+
+    <div class="flex-container1 ">
+        <div class="ex1" style="order: 3">1</div>
+        <div class="ex1" style="order: 2">2</div>
+        <div class="ex1" style="order: 4">3</div>
+        <div class="ex1" style="order: 1">4</div>
+    </div>
+
+    <h1>The flex-grow Property</h1>
+
+    <p>Make the third flex item grow eight times faster than the other flex items:</p>
+
+    <div class="flex-container1 ">
+        <div class="ex1" style="flex-grow: 1">1</div>
+        <div class="ex1" style="flex-grow: 1">2</div>
+        <div class="ex1" style="flex-grow: 8">3</div>
+    </div>
+
+    <h1>The flex-shrink Property</h1>
+
+    <p>Do not let the third flex item shrink as much as the other flex items:</p>
+
+    <div class="flex-container1">
+        <div class="ex1">1</div>
+        <div class="ex1">2</div>
+        <div class="ex1" style="flex-shrink: 0">3</div>
+        <div class="ex1">4</div>
+        <div class="ex1">5</div>
+        <div class="ex1">6</div>
+        <div class="ex1">7</div>
+        <div class="ex1">8</div>
+        <div class="ex1">9</div>
+        <div class="ex1">10</div>
+        <div class="ex1">4</div>
+        <div class="ex1">5</div>
+        <div class="ex1">6</div>
+        <div class="ex1">7</div>
+        <div class="ex1">8</div>
+        <div class="ex1">9</div>
+        <div class="ex1">10</div>
+        <div class="ex1">4</div>
+        <div class="ex1">5</div>
+        <div class="ex1">6</div>
+        <div class="ex1">7</div>
+        <div class="ex1">8</div>
+        <div class="ex1">9</div>
+        <div class="ex1">10</div>
+    </div>
+
+    <h1>The flex-basis Property</h1>
+
+    <p>Set the initial length of the third flex item to 300 pixels:</p>
+
+    <div class="flex-container1">
+        <div class="ex1">1</div>
+        <div class="ex1">2</div>
+        <div class="ex1" style="flex-basis:300px">3</div>
+        <div class="ex1">4</div>
+        <div class="ex1">6</div>
+        <div class="ex1">7</div>
+        <div class="ex1">8</div>
+        <div class="ex1">9</div>
+        <div class="ex1">10</div>
+        <div class="ex1">4</div>
+        <div class="ex1">5</div>
+        <div class="ex1">6</div>
+        <div class="ex1">7</div>
+        <div class="ex1">8</div>
+        <div class="ex1">9</div>
+        <div class="ex1">10</div>
+        <div class="ex1">4</div>
+        <div class="ex1">5</div>
+        <div class="ex1">6</div>
+        <div class="ex1">7</div>
+        <div class="ex1">8</div>
+        <div class="ex1">9</div>
+        <div class="ex1">10</div>
+    </div>
+
+    <h1>The flex Property</h1>
+
+    <p>Make the third flex item not growable (0), not shrinkable (0), and with an initial length of 200 pixels:</p>
+    <div class="flex-container1">
+        <div class="ex1">1</div>
+        <div class="ex1">2</div>
+        <div class="ex1" style="flex: 0 0 200px">3</div>
+        <div class="ex1">4</div>
+    </div>
+
+    <h1>The align-self Property</h1>
+
+    <p>The "align-self: center;" aligns the selected flex item in the middle of the container:</p>
+
+    <div class="flex-container2">
+        <div class="ex2">1</div>
+        <div class="ex2">2</div>
+        <div class="ex2" style="align-self: center">3</div>
+        <div class="ex2">4</div>
+    </div>
+
+    <p>The align-self property overrides the align-items property of the container.</p>
+
+    <h1>The align-self Property</h1>
+
+    <p>The "align-self: flex-start;" aligns the selected flex item at the top of the container.</p>
+    <p>The "align-self: flex-end;" aligns the selected flex item at the bottom of the container.</p>
+
+    <div class="flex-container2">
+        <div class="ex2">1</div>
+        <div class="ex2" style="align-self: flex-start">2</div>
+        <div class="ex2" style="align-self: flex-end">3</div>
+        <div class="ex2">4</div>
+    </div>
+
+    <p>The align-self property overrides the align-items property of the container.</p>
+
+</body>
+
+</html>

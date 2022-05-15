@@ -1,0 +1,95 @@
+<html>
+
+<head>
+    <title>CSS selector</title>
+    <style>
+        /* 1.element Selector */
+        h1 {
+            text-align: center;
+            color: red;
+            font-size: 40px;
+            border: solid 2px;
+        }
+
+        /* 2.id Selector */
+        #para {
+            text-align: center;
+            color: blue;
+            font-size: 20px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        /* 3.class Selector */
+        .main {
+            text-align: center;
+            color: brown;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 20px;
+        }
+
+        p.center {
+            text-align: center;
+            color: blueviolet;
+            font-family: Tahoma;
+            font-size: 15px;
+        }
+
+        p.large {
+            font-size: 150%;
+        }
+
+        /* 4.Universal Selector */
+        * {
+            margin: 10px;
+            padding: 10px;
+        }
+
+        /* 5.Grouping Selector */
+        h3,
+        h4,
+        .master,
+        #masterid {
+            text-align: center;
+            color: rebeccapurple;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS</h1>
+    <br>
+
+    <p id="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam fugit non tenetur adipisci asperiores
+        quod sapiente dignissimos quidem! Cumque rem culpa doloremque nam temporibus! Cum sit suscipit rerum eaque quia.
+    </p>
+    <br>
+
+    <p class="main">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam fugit non tenetur adipisci
+        asperiores
+        quod sapiente dignissimos quidem! Cumque rem culpa doloremque nam temporibus! Cum sit suscipit rerum eaque quia.
+    </p>
+    <br>
+
+    <p class="center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam fugit non tenetur adipisci
+        asperiores
+    </p>
+    <br>
+
+    <p class="center large">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam fugit non tenetur adipisci
+        asperiores</p>
+    <br>
+
+    <h3>Lorem ipsum</h3>
+    <h4>Lorem ipsum</h4>
+    <div class="master">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam fugit non tenetur adipisci
+        asperiores</div>
+
+    <div id="masterid">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam fugit non tenetur adipisci
+        asperiores</div>
+
+
+</body>
+
+</html>

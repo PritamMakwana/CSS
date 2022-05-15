@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font size</title>
+</head>
+<style>
+    body {
+        font-size: 100%;
+    }
+
+    .px {
+        font-size: 40px;
+    }
+
+    .em1 {
+        font-size: 2.5em;
+        /* 40px/16=2.5em */
+    }
+
+    .em2 {
+        font-size: 1.875em;
+        /* 30px/16=1.875em */
+    }
+
+    .em3 {
+        font-size: 0.875em;
+        /* 14px/16=0.875em */
+    }
+</style>
+
+<body>
+    <p class="px">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate repellat modi consectetur.</p>
+    <p class="em1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate repellat modi consectetur.</p>
+    <p class="em2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate repellat modi consectetur.</p>
+    <p class="em3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate repellat modi consectetur.</p>
+
+    <h1 style="font-size:10vw;">Responsive Text</h1>
+
+    <p style="font-size:5vw;">Resize the browser window to see how the text size scales.</p>
+
+    <p style="font-size:5vw;">Use the "vw" unit when sizing the text. 10vw will set the size to 10% of the viewport
+        width.</p>
+
+    <p>Viewport is the browser window size. 1vw = 1% of viewport width. If the viewport is 50cm wide, 1vw is 0.5cm.</p>
+
+</body>
+
+</html>

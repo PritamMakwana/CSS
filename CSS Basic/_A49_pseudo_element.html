@@ -1,0 +1,59 @@
+<!-- The syntax of pseudo-elements:
+
+selector::pseudo-element {
+  property: value;
+} 
+
+Notice the double colon notation - ::first-line versus :first-line
+
+The double colon replaced the single-colon notation for pseudo-elements in CSS3. This was an attempt from W3C to distinguish between pseudo-classes and pseudo-elements.
+
+The single-colon syntax was used for both pseudo-classes and pseudo-elements in CSS2 and CSS1.
+
+For backward compatibility, the single-colon syntax is acceptable for CSS2 and CSS1 pseudo-elements.
+
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        p::first-letter {
+            color: #ff0000;
+            font-size: xx-large;
+        }
+
+        p::first-line {
+            color: #0000ff;
+            font-variant: small-caps;
+        }
+
+        h1::before {
+            content: url(resource/happyemoji.jpg);
+            width: 50px;
+            height: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <p>You can combine the ::first-letter and ::first-line pseudo-elements to add a special effect to the first letter
+        and the first line of a text! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, temporibus.
+        Sit ratione ipsam earum dolorem numquam, corrupti, voluptatibus doloribus repudiandae dignissimos placeat
+        aperiam velit nam porro! Rem consequuntur nobis laborum? Lorem ipsum dolor sit, amet consectetur adipisicing
+        elit. Eos dolorum, ipsam illum voluptate, quia, illo quas consequatur nobis iste facilis sint accusantium ex
+        mollitia doloremque distinctio! Consequatur ipsum repellat Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Similique fugit ducimus velit voluptates sed rerum nihil repellat aut ea cupiditate. Explicabo quae
+        veritatis, obcaecati adipisci minus error. Dolor, quo at? Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Eius, similique vitae! Vitae aliquid sed, libero eveniet mollitia exercitationem aut molestias quos
+        possimus. </p>
+
+    <h1>This is a heading</h1>
+    <p>The ::before pseudo-element inserts content before the content of an element.</p>
+
+
+</body>
+
+</html>

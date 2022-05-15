@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<!-- 
+display Specifies how an element should be displayed
+visibility Specifies whether or not an element should be visible -->
+
+<head>
+    <style>
+        li.inline {
+            display: inline;
+        }
+
+        span {
+            display: block;
+        }
+
+        li.block {
+            display: block;
+        }
+
+        h1.hidden {
+            display: none;
+        }
+
+        h1.visihidden {
+            visibility: hidden;
+        }
+
+        p.inlineblock1 {
+            display: inline-block;
+            background-color: aqua;
+        }
+
+        p.inlineblock2 {
+            display: inline-flex;
+            background-color: aquamarine;
+        }
+
+        p.inlineblock3 {
+            display: inline-flexbox;
+            background-color: blue;
+        }
+
+        p.inlineblock4 {
+            display: inline-table;
+            background-color: blanchedalmond;
+        }
+    </style>
+</head>
+
+<body>
+
+    <p>Display a list of links as a horizontal menu:</p>
+
+    <ul>
+        <li class="inline"><a href="https://www.google.com/" target="_blank">HTML</a></li>
+        <li class="inline"><a href="https://www.google.com/" target="_blank">CSS</a></li>
+        <li class="inline"><a href="https://www.google.com/" target="_blank">JavaScript</a></li>
+    </ul>
+
+    <h1>Display span elements as block elements</h1>
+
+    <span>A display property with</span> <span>a value of "block" results in</span> <span>a line break between each span
+        elements.</span>
+
+    <h1>Display links as block elements</h1>
+
+    <ul>
+        <li class="block"><a href="https://www.google.com/" target="_blank">HTML</a></li>
+        <li class="block"><a href="https://www.google.com/" target="_blank">CSS</a></li>
+        <li class="block"><a href="https://www.google.com/" target="_blank">JavaScript</a></li>
+    </ul>
+
+    <h1>This is a visible heading</h1>
+    <h1 class="hidden">This is a hidden heading</h1>
+    <p>Notice that the h1 element with display: none; does not take up any space.</p>
+
+    <h1>This is a visible heading</h1>
+    <h1 class="visihidden">This is a hidden heading</h1>
+    <p>Notice that the hidden heading still takes up space.</p>
+
+
+    <p class="inlineblock1">show effect </p>
+    <p class="inlineblock1">show effect </p>
+    <p class="inlineblock1">show effect </p>
+    <p class="inlineblock1">show effect </p>
+
+    <p class="inlineblock2">show effect </p>
+    <p class="inlineblock2">show effect </p>
+    <p class="inlineblock2">show effect </p>
+    <p class="inlineblock2">show effect </p>
+
+    <p class="inlineblock3">show effect </p>
+    <p class="inlineblock3">show effect </p>
+    <p class="inlineblock3">show effect </p>
+    <p class="inlineblock3">show effect </p>
+
+    <p class="inlineblock4">show effect </p>
+    <p class="inlineblock4">show effect </p>
+    <p class="inlineblock4">show effect </p>
+    <p class="inlineblock4">show effect </p>
+
+
+
+</body>
+
+</html>

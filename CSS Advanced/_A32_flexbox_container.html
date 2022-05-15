@@ -1,0 +1,298 @@
+<!-- 
+The flex container properties are:
+
+align-content	Modifies the behavior of the flex-wrap property. It is similar to align-items, but instead of aligning flex items, it aligns flex lines
+
+align-items	Vertically aligns the flex items when the items do not use all available space on the cross-axis
+display	Specifies the type of box used for an HTML element
+
+flex-direction	Specifies the direction of the flexible items inside a flex container
+
+flex-flow	A shorthand property for flex-direction and flex-wrap
+
+flex-wrap	Specifies whether the flex items should wrap or not, if there is not enough room for them on one flex line
+
+justify-content	Horizontally aligns the flex items when the items do not use all available space on the main-axis -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+  <style>
+    /* 1 */
+    .flex-container {
+      display: flex;
+
+      background-color: DodgerBlue;
+
+      flex-direction: column;
+      /* flex-direction: column-reverse; */
+
+      /* flex-direction: row; */
+      /* flex-direction: row-reverse; */
+
+    }
+
+    .flex-container>div.ex1 {
+      background-color: #f1f1f1;
+      width: 100px;
+      margin: 10px;
+      text-align: center;
+      line-height: 75px;
+      font-size: 30px;
+    }
+
+    /* 2 */
+    .flex-container2 {
+      display: flex;
+      background-color: DodgerBlue;
+
+      flex-wrap: wrap;
+      /* flex-wrap: nowrap; */
+      /* flex-wrap: wrap-reverse; */
+    }
+
+    .flex-container2>div.ex2 {
+      background-color: #f1f1f1;
+      width: 100px;
+      margin: 10px;
+      text-align: center;
+      line-height: 75px;
+      font-size: 30px;
+    }
+
+    /* 3 */
+    .flex-container3 {
+      display: flex;
+      flex-flow: row wrap;
+      background-color: DodgerBlue;
+    }
+
+    .flex-container3>div.ex3 {
+      background-color: #f1f1f1;
+      width: 100px;
+      margin: 10px;
+      text-align: center;
+      line-height: 75px;
+      font-size: 30px;
+    }
+
+    /* 4 */
+    .flex-container4 {
+      display: flex;
+      background-color: DodgerBlue;
+
+      justify-content: center;
+      /* justify-content: flex-start; */
+      /* justify-content: flex-end; */
+      /* justify-content: space-around; */
+      /* justify-content: space-between; */
+
+
+    }
+
+    .flex-container4>div.ex4 {
+      background-color: #f1f1f1;
+      width: 100px;
+      margin: 10px;
+      text-align: center;
+      line-height: 75px;
+      font-size: 30px;
+    }
+
+    /* 5 */
+
+    .flex-container5 {
+      display: flex;
+      height: 200px;
+      background-color: DodgerBlue;
+
+      align-items: center;
+      /* align-items: flex-start; */
+      /* align-items: flex-end; */
+      /* align-items: stretch; */
+      /* align-items: baseline; */
+
+    }
+
+    .flex-container5>div.ex5 {
+      background-color: #f1f1f1;
+      width: 100px;
+      margin: 10px;
+      text-align: center;
+      line-height: 75px;
+      font-size: 30px;
+    }
+
+    /* 6 */
+    .flex-container6 {
+      display: flex;
+      height: 600px;
+      flex-wrap: wrap;
+      overflow: scroll;
+      background-color: DodgerBlue;
+
+      align-content: space-between;
+      /* align-content: space-around; */
+      /* align-content: stretch; */
+      /* align-content: center; */
+      /* align-content: flex-start; */
+      /* align-content: flex-end; */
+
+    }
+
+    .flex-container6>div.ex6 {
+      background-color: #f1f1f1;
+      width: 100px;
+      margin: 10px;
+      text-align: center;
+      line-height: 75px;
+      font-size: 30px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>The flex-direction Property</h1>
+
+  <p>The "flex-direction: column;" stacks the flex items vertically (from top to bottom):</p>
+
+  <div class="flex-container ex1">
+    <div class="ex1">1</div>
+    <div class="ex1">2</div>
+    <div class="ex1">3</div>
+  </div>
+
+  <h1>The flex-wrap Property</h1>
+
+  <p>The "flex-wrap: wrap;" specifies that the flex items will wrap if necessary:</p>
+
+  <div class="flex-container2 ex2">
+    <div class="ex2">1</div>
+    <div class="ex2">2</div>
+    <div class="ex2">3</div>
+    <div class="ex2">4</div>
+    <div class="ex2">5</div>
+    <div class="ex2">6</div>
+    <div class="ex2">7</div>
+    <div class="ex2">8</div>
+    <div class="ex2">9</div>
+    <div class="ex2">10</div>
+    <div class="ex2">11</div>
+    <div class="ex2">12</div>
+    <div class="ex2">13</div>
+    <div class="ex2">14</div>
+    <div class="ex2">15</div>
+    <div class="ex2">16</div>
+    <div class="ex2">17</div>
+    <div class="ex2">18</div>
+    <div class="ex2">19</div>
+    <div class="ex2">20</div>
+    <div class="ex2">21</div>
+    <div class="ex2">22</div>
+    <div class="ex2">23</div>
+    <div class="ex2">24</div>
+    <div class="ex2">25</div>
+    <div class="ex2">26</div>
+    <div class="ex2">27</div>
+    <div class="ex2">28</div>
+    <div class="ex2">29</div>
+    <div class="ex2">30</div>
+    <div class="ex2">31</div>
+    <div class="ex2">32</div>
+    <div class="ex2">33</div>
+    <div class="ex2">34</div>
+    <div class="ex2">35</div>
+    <div class="ex2">36</div>
+  </div>
+
+  <p>Try resizing the browser window.</p>
+
+  <h1>The flex-flow Property</h1>
+
+  <p>The flex-flow property is a shorthand property for the flex-direction and the flex-wrap properties.</p>
+
+  <div class="flex-container3 ex3">
+    <div class="ex3">1</div>
+    <div class="ex3">2</div>
+    <div class="ex3">3</div>
+    <div class="ex3">4</div>
+    <div class="ex3">5</div>
+    <div class="ex3">6</div>
+    <div class="ex3">7</div>
+    <div class="ex3">8</div>
+    <div class="ex3">9</div>
+    <div class="ex3">10</div>
+    <div class="ex3">11</div>
+    <div class="ex3">12</div>
+    <div class="ex3">13</div>
+    <div class="ex3">14</div>
+    <div class="ex3">15</div>
+    <div class="ex3">16</div>
+    <div class="ex3">17</div>
+    <div class="ex3">18</div>
+    <div class="ex3">19</div>
+    <div class="ex3">20</div>
+    <div class="ex3">21</div>
+
+  </div>
+
+  <p>Try resizing the browser window.</p>
+
+  <h1>The justify-content Property</h1>
+
+  <p>The "justify-content: center;" aligns the flex items at the center of the container:</p>
+
+  <div class="flex-container4 ex4">
+    <div class="ex4">1</div>
+    <div class="ex4">2</div>
+    <div class="ex4">3</div>
+    <div class="ex4">4</div>
+    <div class="ex4">5</div>
+    <div class="ex4">6</div>
+  </div>
+
+  <h1>The align-items Property</h1>
+
+  <p>The "align-items: center;" aligns the flex items in the middle of the container:</p>
+
+  <div class="flex-container5 ex5">
+    <div class="ex5">1</div>
+    <div class="ex5">2</div>
+    <div class="ex5">3</div>
+    <div class="ex5">4</div>
+    <div class="ex5">5</div>
+    <div class="ex5">6</div>
+  </div>
+  <!-- baseline time use -->
+  <!-- <div class="flex-container5">
+    <div class="ex5" ><h1>1</h1></div>
+    <div class="ex5"><h6>2</h6></div>
+    <div class="ex5"><h3>3</h3></div>  
+    <div class="ex5"><small>4</small></div>  
+  </div> -->
+
+  <h1>The align-content Property</h1>
+
+  <p>The "align-content: space-between;" displays the flex lines with equal space between them:</p>
+  <div class="flex-container6 ex6">
+    <div class="ex6">1</div>
+    <div class="ex6">2</div>
+    <div class="ex6">3</div>
+    <div class="ex6">4</div>
+    <div class="ex6">5</div>
+    <div class="ex6">6</div>
+    <div class="ex6">7</div>
+    <div class="ex6">8</div>
+    <div class="ex6">9</div>
+    <div class="ex6">10</div>
+    <div class="ex6">11</div>
+    <div class="ex6">12</div>
+  </div>
+
+
+</body>
+
+</html>

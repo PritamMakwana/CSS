@@ -1,0 +1,97 @@
+<!--
+mask-image	Specifies an image to be used as a mask layer for an element
+mask-mode	Specifies whether the mask layer image is treated as a luminance mask or as an alpha mask
+mask-origin	Specifies the origin position (the mask position area) of a mask layer image
+mask-position	Sets the starting position of a mask layer image (relative to the mask position area)
+mask-repeat	Specifies how the mask layer image is repeated
+mask-size	Specifies the size of a mask layer image -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    .mask1 {
+      -webkit-mask-image: linear-gradient(black, transparent);
+      mask-image: linear-gradient(black, transparent);
+    }
+
+    p.ex2 {
+      font-size: 20px;
+      padding: 20px;
+      color: white;
+    }
+
+    .mask2 {
+      max-width: 600px;
+      height: 350px;
+      overflow-y: scroll;
+      background: url(resource/terre_wide.jpg) no-repeat;
+      -webkit-mask-image: linear-gradient(black, transparent);
+      mask-image: linear-gradient (black, transparent);
+    }
+
+    .mask3 {
+      -webkit-mask-image: radial-gradient(circle, black 50%, rgba(0, 0, 0, 0.5) 50%);
+      mask-image: radial-gradient(circle, black 50%, rgba(0, 0, 0, 0.5) 50%);
+    }
+
+    .mask4 {
+      -webkit-mask-image: url(resource/balckapple.png);
+      mask-image: url(resource/balckapple.png);
+      -webkit-mask-repeat: no-repeat;
+      mask-repeat: no-repeat;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>The mask-image Property</h1>
+
+  <h3>An image with a mask layer image:</h3>
+  <div class="mask1">
+    <img src="resource/terre_wide.jpg" alt="Cinque Terre" width="600" height="400">
+  </div>
+
+  <h3>Original image:</h3>
+  <img src="resource/terre_wide.jpg" alt="Cinque Terre" width="600" height="400">
+
+
+  <h1>The mask-image Property</h1>
+
+  <h3>A linear gradient as a mask layer:</h3>
+
+  <div class="mask2">
+    <p class="ex2">The Cinque Terre is a coastal area within Liguria, in the northwest of Italy. It lies in the west of
+      La Spezia Province, and comprises five villages: Monterosso al Mare, Vernazza, Corniglia, Manarola, and
+      Riomaggiore.</p>
+
+    <p class="ex2">The Cinque Terre is a coastal area within Liguria, in the northwest of Italy. It lies in the west of
+      La Spezia Province, and comprises five villages: Monterosso al Mare, Vernazza, Corniglia, Manarola, and
+      Riomaggiore.</p>
+
+    <p class="ex2">The Cinque Terre is a coastal area within Liguria, in the northwest of Italy. It lies in the west of
+      La Spezia Province, and comprises five villages: Monterosso al Mare, Vernazza, Corniglia, Manarola, and
+      Riomaggiore.</p>
+  </div>
+
+  <h1>The mask-image Property</h1>
+
+  <h3>A radial gradient as a mask layer (a circle):</h3>
+  <div class="mask3">
+    <img src="resource/terre_wide.jpg" alt="Cinque Terre" width="600" height="400">
+  </div>
+
+
+  <h1>The mask-image Property</h1>
+
+  <h3>An image with a mask layer image:</h3>
+  <div class="mask4">
+    <img src="resource/terre_wide.jpg" alt="Cinque Terre" width="600" height="400">
+  </div>
+
+
+</body>
+
+</html>

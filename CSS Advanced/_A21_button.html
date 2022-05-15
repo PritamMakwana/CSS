@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    .button1 {
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
+
+    .button2 {
+      background-color: #008CBA;
+    }
+
+    /* Blue */
+    .button3 {
+      background-color: #f44336;
+    }
+
+    /* Red */
+    .button4 {
+      background-color: #e7e7e7;
+      color: black;
+    }
+
+    /* Gray */
+    .button5 {
+      background-color: #555555;
+    }
+
+    /* Black */
+
+    .button6 {
+      font-size: 10px;
+    }
+
+    .button7 {
+      font-size: 12px;
+    }
+
+    .button8 {
+      font-size: 16px;
+    }
+
+    .button9 {
+      font-size: 20px;
+    }
+
+    .button10 {
+      font-size: 24px;
+    }
+
+    .button11 {
+      padding: 10px 24px;
+    }
+
+    .button12 {
+      padding: 12px 28px;
+    }
+
+    .button13 {
+      padding: 14px 40px;
+    }
+
+    .button14 {
+      padding: 32px 16px;
+    }
+
+    .button15 {
+      padding: 16px;
+    }
+
+    .button16 {
+      border-radius: 2px;
+    }
+
+    .button17 {
+      border-radius: 4px;
+    }
+
+    .button18 {
+      border-radius: 8px;
+    }
+
+    .button19 {
+      border-radius: 12px;
+    }
+
+    .button20 {
+      border-radius: 50%;
+    }
+
+    .button21 {
+      background-color: white;
+      color: black;
+      border: 2px solid #4CAF50;
+    }
+
+    .button22 {
+      background-color: white;
+      color: black;
+      border: 2px solid #008CBA;
+    }
+
+    .button23 {
+      background-color: white;
+      color: black;
+      border: 2px solid #f44336;
+    }
+
+    .button24 {
+      background-color: white;
+      color: black;
+      border: 2px solid #e7e7e7;
+    }
+
+    .button25 {
+      background-color: white;
+      color: black;
+      border: 2px solid #555555;
+    }
+
+    .button21:hover {
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    .button22:hover {
+      background-color: #008CBA;
+      color: white;
+    }
+
+    .button23:hover {
+      background-color: #f44336;
+      color: white;
+    }
+
+    .button24:hover {
+      background-color: #e7e7e7;
+    }
+
+    .button25:hover {
+      background-color: #555555;
+      color: white;
+    }
+
+    .button26 {
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .button27:hover {
+      box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .disabled28 {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+
+    .button29 {
+      width: 250px;
+    }
+
+    .button30 {
+      width: 50%;
+    }
+
+    .button31 {
+      width: 100%;
+    }
+
+    .btn-group32 .button33 {
+      background-color: #4CAF50;
+      /* Green */
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      cursor: pointer;
+      float: left;
+      /* border: 1px solid green; */
+    }
+
+    .btn-group32 .button33:hover {
+      background-color: #3e8e41;
+
+    }
+
+    .btn-group34 .button35 {
+      background-color: #4CAF50;
+      /* Green */
+      border: 1px solid green;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      font-size: 16px;
+      cursor: pointer;
+      width: 150px;
+      display: block;
+    }
+
+    .btn-group34 .button35:not(:last-child) {
+      border-bottom: none;
+      /* Prevent double borders */
+    }
+
+    .btn-group34 .button35:hover {
+      background-color: #3e8e41;
+    }
+
+    .container36 {
+      position: relative;
+      width: 100%;
+      max-width: 400px;
+    }
+
+    .container36 img.img37 {
+      width: 100%;
+      height: auto;
+    }
+
+    .container36 .btn38 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      background-color: #f1f1f1;
+      color: black;
+      font-size: 16px;
+      padding: 16px 30px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      text-align: center;
+    }
+
+    .container36 .btn38:hover {
+      background-color: black;
+      color: white;
+    }
+
+    .button39 {
+      display: inline-block;
+      border-radius: 4px;
+      background-color: #f4511e;
+      border: none;
+      color: #FFFFFF;
+      text-align: center;
+      font-size: 28px;
+      padding: 20px;
+      width: 200px;
+      transition: all 0.5s;
+      cursor: pointer;
+      margin: 5px;
+    }
+
+    .button39 span.ex40 {
+      cursor: pointer;
+      display: inline-block;
+      position: relative;
+      transition: 0.5s;
+    }
+
+    .button39 span.ex40:after {
+      content: '\00bb';
+      position: absolute;
+      opacity: 0;
+      top: 0;
+      right: -20px;
+      transition: 0.5s;
+    }
+
+    .button39:hover span.ex40 {
+      padding-right: 25px;
+    }
+
+    .button39:hover span.ex40:after {
+      opacity: 1;
+      right: 0;
+    }
+
+    .button41 {
+      display: inline-block;
+      padding: 15px 25px;
+      font-size: 24px;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      outline: none;
+      color: #fff;
+      background-color: #4CAF50;
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 9px #999;
+    }
+
+    .button41:hover {
+      background-color: #3e8e41
+    }
+
+    .button41:active {
+      background-color: #3e8e41;
+      box-shadow: 0 5px #666;
+      transform: translateY(4px);
+    }
+
+    .button42 {
+      background-color: #f4511e;
+      border: none;
+      color: white;
+      padding: 16px 32px;
+      text-align: center;
+      font-size: 16px;
+      margin: 4px 2px;
+      opacity: 0.6;
+      transition: 0.3s;
+      display: inline-block;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .button42:hover {
+      opacity: 1
+    }
+
+    .button43 {
+      position: relative;
+      background-color: #4CAF50;
+      border: none;
+      font-size: 28px;
+      color: #FFFFFF;
+      padding: 20px;
+      width: 200px;
+      text-align: center;
+      transition-duration: 0.4s;
+      text-decoration: none;
+      overflow: hidden;
+      cursor: pointer;
+    }
+
+    .button43:after {
+      content: "";
+      background: #f1f1f1;
+      display: block;
+      position: absolute;
+      padding-top: 300%;
+      padding-left: 350%;
+      margin-left: -20px !important;
+      margin-top: -120%;
+      opacity: 0;
+      transition: all 1s
+    }
+
+    .button43:active:after {
+      padding: 0;
+      margin: 0;
+      opacity: 1;
+      transition: 0s
+    }
+  </style>
+</head>
+
+<body>
+
+  <h2>CSS Buttons</h2>
+
+  <button>Default Button</button>
+  <a href="#" class="button1">Link Button</a>
+  <button class="button1">Button</button>
+  <input type="button" class="button1" value="Input Button">
+
+  <h2>Button Colors</h2>
+
+  <p>Change the background color of a button with the background-color property:</p>
+
+  <button class="button1">Green</button>
+  <button class="button1 button2">Blue</button>
+  <button class="button1 button3">Red</button>
+  <button class="button1 button4">Gray</button>
+  <button class="button1 button5">Black</button>
+
+  <h2>Button Sizes</h2>
+
+  <p>Change the font size of a button with the font-size property:</p>
+
+  <button class="button1 button6">10px</button>
+  <button class="button1 button7">12px</button>
+  <button class="button1 button8">16px</button>
+  <button class="button1 button9">20px</button>
+  <button class="button1 button10">24px</button>
+
+  <h2>Button Padding</h2>
+
+  <p>Change the padding of a button with the padding property:</p>
+
+  <button class="button1 button11">10px 24px</button>
+  <button class="button1 button12">12px 28px</button>
+  <button class="button1 button13">14px 40px</button>
+  <button class="button1 button14">32px 16px</button>
+  <button class="button1 button15">16px</button>
+
+  <h2>Rounded Buttons</h2>
+
+  <p>Add rounded corners to a button with the border-radius property:</p>
+
+  <button class="button1 button16">2px</button>
+  <button class="button1 button17">4px</button>
+  <button class="button1 button18">8px</button>
+  <button class="button1 button19">12px</button>
+  <button class="button1 button20">50%</button>
+
+  <h2>Colored Button Borders & Hoverable Buttons</h2>
+
+  <p>Use the border property to add a border to the button:</p>
+
+  <p>Use the :hover selector to change the style of the button when you move the mouse over it.</p>
+  <p><strong>Tip:</strong> Use the transition-duration property to determine the speed of the "hover" effect:</p>
+
+  <button class="button1 button21">Green</button>
+  <button class="button1 button22">Blue</button>
+  <button class="button1 button23">Red</button>
+  <button class="button1 button24">Gray</button>
+  <button class="button1 button25">Black</button>
+
+  <h2>Shadow Buttons</h2>
+
+  <p>Use the box-shadow property to add shadows to the button:</p>
+
+  <button class="button1 button26">Shadow Button</button>
+  <button class="button1 button27">Shadow on Hover</button>
+
+  <h2>Disabled Button</h2>
+
+  <p>Use the opacity property to add some transparency to a button (make it look disabled):</p>
+
+  <button class="button1">Normal Button</button>
+  <button class="button1 disabled28">Disabled Button</button>
+
+  <h2>Set Button Widths</h2>
+
+  <p>Use the width property to change the width of the button:</p>
+
+  <button class="button1 button29">250px</button><br>
+  <button class="button1 button30">50%</button><br>
+  <button class="button1 button31">100%</button>
+
+  <p><strong>Tip:</strong> Use pixels if you want to set a fixed width and use percent for responsive buttons (e.g. 50%
+    of its parent element). Resize the browser window to see the effect.</p>
+
+  <h2>Button Groups</h2>
+
+  <p>Remove margins and float the buttons to create a button group:</p>
+
+  <div class="btn-group32">
+    <button class="button33">Button</button>
+    <button class="button33">Button</button>
+    <button class="button33">Button</button>
+    <button class="button33">Button</button>
+  </div>
+
+  <p style="clear:both"><br>Remember to clear floats after, or else will this p element also float next to the buttons.
+  </p>
+
+  <h2>Vertical Button Group</h2>
+
+  <div class="btn-group34">
+    <button class="button35">Button</button>
+    <button class="button35">Button</button>
+    <button class="button35">Button</button>
+    <button class="button35">Button</button>
+  </div>
+
+  <h2>Button on Image</h2>
+
+  <p>Add a button on an image:</p>
+
+  <div class="container36">
+    <img class="img37" src="resource/lights.jpg" alt="Snow" style="width:100%">
+    <button class="btn38">Button</button>
+  </div>
+
+  <h2>Animated Button</h2>
+
+  <button class="button39" style="vertical-align:middle"><span class="ex40">Hover </span></button>
+
+  <h2>Animated Button - "Pressed Effect"</h2>
+
+  <button class="button41">Click Me</button>
+
+  <h2>Animated Button - Fade in Effect</h2>
+
+  <button class="button42">Hover Over Me</button>
+
+  <h2>Animated Button - Ripple Effect</h2>
+
+  <button class="button43">Click Me</button>
+
+</body>
+
+</html>

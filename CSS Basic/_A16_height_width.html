@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .normal {
+            height: 50px;
+            width: 100%;
+            border: 1px solid #4CAF50;
+        }
+
+        .one {
+            height: 200px;
+            width: 50%;
+            background-color: powderblue;
+        }
+
+        .px {
+            height: 100px;
+            width: 500px;
+            background-color: powderblue;
+        }
+
+        /* The max-width property is used to set the maximum width of an element.
+         Note: If you for some reason use both the width property and the max-width property on the same element,
+        and the value of the width property is larger than the max-width property;
+        the max-width property will be used (and the width property will be ignored). */
+        .max {
+            max-width: 500px;
+            height: 100px;
+            background-color: powderblue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>CSS height and width properties</h2>
+
+    <div class="normal">This div element has a height of 50 pixels and a width of 100%.</div>
+
+    <h2>Set the height and width of an element</h2>
+
+    <div class="one">This div element has a height of 200px and a width of 50%.</div>
+
+    <h2>Set the height and width of an element</h2>
+
+    <div class="px"> This div element has a height of 100px and a width of 500px.</div>
+    <h2>Set the max-width of an element</h2>
+
+    <div class="max">This div element has a height of 100px and a max-width of 500px.</div>
+
+    <p>Resize the browser window to see the effect.</p>
+
+
+</body>
+
+</html>
+
+<!-- 
+The height and width properties may have the following values:
+
+auto - This is default. The browser calculates the height and width
+length - Defines the height/width in px, cm etc.
+% - Defines the height/width in percent of the containing block
+initial - Sets the height/width to its default value
+inherit - The height/width will be inherited from its parent value -->

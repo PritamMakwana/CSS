@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    img.ex1 {
+      border-radius: 8px;
+    }
+
+    img.ex2 {
+      border-radius: 50%;
+    }
+
+    img.ex3 {
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      padding: 5px;
+      width: 150px;
+    }
+
+    img.ex3:hover {
+      box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+    }
+
+    img.ex4 {
+      max-width: 100%;
+      height: auto;
+    }
+
+    img.ex5 {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    div.polaroid6 {
+      width: 80%;
+      background-color: white;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      margin-bottom: 25px;
+      margin: 25px
+    }
+
+    div.container6 {
+      text-align: center;
+      padding: 10px 20px;
+      margin: 25px
+    }
+
+    img.ex7 {
+      opacity: 0.5;
+    }
+
+    .container8 {
+      position: relative;
+    }
+
+    .center8 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 18px;
+    }
+
+    img.ex8 {
+      width: 100%;
+      height: auto;
+      opacity: 0.3;
+    }
+
+    img.ex9 {
+      width: 33%;
+      height: auto;
+      float: left;
+      max-width: 235px;
+    }
+
+    .blur {
+      filter: blur(4px);
+    }
+
+    .brightness {
+      filter: brightness(250%);
+    }
+
+    .contrast {
+      filter: contrast(180%);
+    }
+
+    .grayscale {
+      filter: grayscale(100%);
+    }
+
+    .huerotate {
+      filter: hue-rotate(180deg);
+    }
+
+    .invert {
+      filter: invert(100%);
+    }
+
+    .opacity {
+      filter: opacity(50%);
+    }
+
+    .saturate {
+      filter: saturate(7);
+    }
+
+    .sepia {
+      filter: sepia(100%);
+    }
+
+    .shadow {
+      filter: drop-shadow(8px 8px 10px green);
+    }
+
+
+    .container10 {
+      position: relative;
+      width: 50%;
+    }
+
+    .image10 {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .overlay10 {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 500px;
+      width: 500px;
+      opacity: 0;
+      transition: .5s ease;
+      background-color: #008CBA;
+    }
+
+    .container10:hover .overlay10 {
+      opacity: 1;
+    }
+
+    .text10 {
+      color: white;
+      font-size: 20px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+    }
+
+
+    .container11 {
+      position: relative;
+      width: 50%;
+    }
+
+    .image11 {
+      opacity: 1;
+      display: block;
+      width: 100%;
+      height: auto;
+      transition: .5s ease;
+      backface-visibility: hidden;
+    }
+
+    .middle11 {
+      transition: .5s ease;
+      opacity: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%)
+    }
+
+    .container11:hover .image11 {
+      opacity: 0.3;
+    }
+
+    .container11:hover .middle11 {
+      opacity: 1;
+    }
+
+    .text11 {
+      background-color: #4CAF50;
+      color: white;
+      font-size: 16px;
+      padding: 16px 32px;
+    }
+
+    .container12 {
+      position: relative;
+      width: 50%;
+    }
+
+    .image12 {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .overlay12 {
+      position: absolute;
+      bottom: 100%;
+      left: 0;
+      right: 0;
+      background-color: #008CBA;
+      overflow: hidden;
+      width: 100%;
+      height: 0;
+      transition: .5s ease;
+    }
+
+    .container12:hover .overlay12 {
+      bottom: 0;
+      height: 100%;
+    }
+
+    .text12 {
+      white-space: nowrap;
+      color: white;
+      font-size: 20px;
+      position: absolute;
+      overflow: hidden;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+    }
+
+    img.ex13:hover {
+      transform: scaleX(-1);
+    }
+  </style>
+</head>
+
+<body>
+
+  <h2>Rounded Image</h2>
+
+  <p>Use the border-radius property to create rounded images:</p>
+
+  <img class="ex1" src="resource/paris.jpg" alt="Paris" width="300" height="300">
+
+  <h2>Circled Image</h2>
+
+  <p>Use the border-radius property to create circled images:</p>
+
+  <img class="ex2" src="resource/paris.jpg" alt="Paris" width="300" height="300">
+
+  <h2>Thumbnail Image as Link</h2>
+
+  <p>Use the border property to create thumbnail images. Wrap an anchor around the image to use it as a link.</p>
+  <p>Hover over the image and click on it to see the effect.</p>
+
+  <a target="_blank" href="resource/paris.jpg">
+    <img class="ex3" src="resource/paris.jpg" alt="Paris" style="width:150px">
+  </a>
+
+  <h2>Responsive Image</h2>
+
+  <p>Responsive images will automatically adjust to fit the size of the screen.</p>
+  <p>Resize the browser window to see the effect:</p>
+
+  <img class="ex4" src="resource/terre_wide.jpg" alt="image" width="1000" height="300">
+
+  <h2>Center an Image</h2>
+
+  <p>To center an image, set left and right margin to auto, and make it into a block element.</p>
+
+  <img class="ex5" src="resource/paris.jpg" alt="Paris" style="width:50%">
+
+  <h2>Responsive Polaroid Images / Cards</h2>
+
+  <div class="polaroid6">
+    <img src="resource/terre_wide.jpg" alt="5 Terre" style="width:100%">
+    <div class="container6">
+      <p>Cinque Terre</p>
+    </div>
+  </div>
+
+  <div class="polaroid6">
+    <img src="resource/lights.jpg" alt="Norther Lights" style="width:100%">
+    <div class="container6">
+      <p>Northern Lights</p>
+    </div>
+  </div>
+
+  <h1>Image Transparency</h1>
+
+  <p>The opacity property specifies the transparency of an element. The lower the value, the more transparent:</p>
+
+  <p>Image with 50% opacity:</p>
+  <img class="ex7" src="resource/green.jpg" alt="Forest" width="170" height="100">
+
+  <h2>Image Text</h2>
+
+  <p>Center text in image:</p>
+
+  <div class="container8">
+    <img class="ex8" src="resource/terre_wide.jpg" alt="Cinque Terre" width="1000" height="300">
+    <div class="center8">Centered</div>
+  </div>
+
+  <h2>Image Filters</h2>
+
+  <p><strong>Note:</strong> The filter property is not supported in Internet Explorer or Edge 12.</p>
+
+  <img class="ex9" src="resource/pineapple.jpg" alt="Pineapple" width="300" height="300">
+  <img class="blur ex9" src="resource/pineapple.jpg" alt="Pineapple" width="300" height="300">
+  <img class="brightness ex9" src="resource/pineapple.jpg" alt="Pineapple" width="300" height="300">
+  <img class="contrast ex9" src="resource/pineapple.jpg" alt="Pineapple" width="300" height="300">
+  <img class="grayscale ex9" src="resource/pineapple.jpg" alt="Pineapple" width="300" height="300">
+  <img class="huerotate ex9" src="resource/pineapple.jpg" alt="Pineapple" width="300" height="300">
+  <img class="invert ex9" src="resource/pineapple.jpg" alt="Pineapple" width="300" height="300">
+  <img class="opacity ex9" src="resource/pineapple.jpg" alt="Pineapple" width="300" height="300">
+  <img class="saturate ex9" src="resource/pineapple.jpg" alt="Pineapple" width="300" height="300">
+  <img class="sepia ex9" src="resource/pineapple.jpg" alt="Pineapple" width="300" height="300">
+  <img class="shadow ex9" src="resource/pineapple.jpg" alt="Pineapple" width="300" height="300">
+
+
+</body>
+
+</html>
