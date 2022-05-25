@@ -500,3 +500,116 @@ header ul li {
   margin-right: -48px;
   position: relative;
 }
+
+/* portfolio */
+
+.portfolio {
+  display: grid;
+  grid-template-areas:
+    'ps project project project project'
+    'btnmore btnmore btnmore btnmore btnmore';
+
+}
+
+
+.portfolioside {
+  grid-area: ps;
+}
+
+.portsideline {
+  border: var(--testsolid) solid 1px;
+  height: 100px;
+  width: 0px;
+  margin-left: 100px;
+  background-color: var(--testsolid);
+  margin-top: -100px;
+
+}
+
+.portsidetext {
+  background-color: var(--darkbg);
+  border: var(--darkbg) solid 3px;
+  border-radius: 5px;
+  font-size: 20px;
+  width: 100px;
+  padding: 1px 10px;
+  color: var(--testsolid);
+  transform: rotate(-90deg);
+  margin-top: 40px;
+  margin-left: 38px;
+}
+
+
+.portfolioprojects {
+  grid-area: project;
+  display: grid;
+  grid-template-areas: 'p1 p2 p3';
+  margin-left: -30px;
+}
+
+.projectbg {
+  color: var(--testsolid);
+  background-color: var(--darkbg);
+  border-radius: 5px;
+  width: 300px;
+  height: 400px;
+}
+
+.project1 {
+  grid-area: p1;
+  margin: 10px 0px 10px 0px;
+  transition: 1.2s;
+
+}
+
+.projectimg1 {
+  border-radius: 5px;
+  filter: grayscale(100%);
+  transition: 2s;
+}
+
+.projectimg1:hover {
+  filter: grayscale(0%);
+  filter: contrast(120%) 2s;
+}
+
+.projecttitle1 {
+  margin: 10px;
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.projectdesc1 {
+  margin: 10px;
+  font-size: large;
+  font-weight: 200;
+}
+
+.project2 {
+  grid-area: p2;
+  margin: 10px -170px 10px -170px;
+}
+
+.project3 {
+  grid-area: p3;
+  margin: 10px 0px 10px -40px;
+}
+
+.btnmore {
+  grid-area: btnmore;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  padding-left: 160px;
+  margin-bottom: 10px;
+}
+
+.buttonmore {
+  border: 2px solid var(--prime);
+  border-radius: 5px;
+  color: var(--testsolid);
+  background-color: var(--bg);
+  margin: 10px 10px 10px 10px;
+  padding: 15px 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
