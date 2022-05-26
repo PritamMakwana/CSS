@@ -613,3 +613,79 @@ header ul li {
   font-size: 20px;
   font-weight: bold;
 }
+
+/* contact */
+
+.contact {
+  border: 2px solid black;
+  display: grid;
+  grid-template-areas: 'cleft cleft ccenter ccenter cright';
+}
+
+.contactleft {
+  border: 2px solid coral;
+  grid-area: cleft;
+  margin-left: 200px;
+  margin-right: 470px;
+}
+.con_info{
+
+}
+.con_info p{
+  color: var(--testsolid);
+  font-size: 17px;
+  line-height: 1.5;
+  font-weight: 500;
+}
+.con_btn{
+
+}
+.contactme{
+ color: var(--testsolid);
+ background-color: var(--prime);
+ margin-top: 20px;
+ border-radius: 5px;
+ font-size: larger;
+ font-weight: 500;
+ padding: 14px 28px;
+}
+
+.contactcenter {
+  border: 2px solid  yellow;
+  grid-area: ccenter;
+}
+.con1{
+
+}
+.conhand1{
+  color: var(--testsolid);
+}
+.solidtext1{
+  color: var(--testsolid);
+
+}
+.lighttext1{
+  color: var(--textlight);
+
+}
+.con2{
+  
+}
+.con3{
+  
+}
+.con4{
+  
+}
+
+.contactright {
+  border: 2px solid violet ;
+
+  grid-area: cright;
+}
+.con_line{
+
+}
+.con_text{
+
+}
