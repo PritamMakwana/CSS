@@ -508,7 +508,7 @@ header ul li {
   grid-template-areas:
     'ps project project project project'
     'btnmore btnmore btnmore btnmore btnmore';
-
+  margin-bottom: 200px;
 }
 
 
@@ -617,75 +617,96 @@ header ul li {
 /* contact */
 
 .contact {
-  border: 2px solid black;
   display: grid;
   grid-template-areas: 'cleft cleft ccenter ccenter cright';
 }
 
 .contactleft {
-  border: 2px solid coral;
   grid-area: cleft;
   margin-left: 200px;
   margin-right: 470px;
+  margin-top: 10px;
 }
-.con_info{
 
-}
-.con_info p{
+.con_info p {
   color: var(--testsolid);
-  font-size: 17px;
+  font-size: 18px;
   line-height: 1.5;
   font-weight: 500;
 }
-.con_btn{
 
-}
-.contactme{
- color: var(--testsolid);
- background-color: var(--prime);
- margin-top: 20px;
- border-radius: 5px;
- font-size: larger;
- font-weight: 500;
- padding: 14px 28px;
+.contactme {
+  color: var(--testsolid);
+  background-color: var(--prime);
+  margin-top: 20px;
+  border-radius: 5px;
+  font-size: larger;
+  font-weight: 500;
+  padding: 14px 28px;
 }
 
 .contactcenter {
-  border: 2px solid  yellow;
   grid-area: ccenter;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  margin-left: 140px;
 }
-.con1{
 
-}
-.conhand1{
+.conhand1 {
   color: var(--testsolid);
+  font-size: 30px;
+  font-weight: bold;
 }
-.solidtext1{
-  color: var(--testsolid);
 
+.solidtext1 {
+  display: inline;
+  color: var(--testsolid);
+  font-weight: 500;
+  font-size: 17px;
 }
-.lighttext1{
+
+.lighttext1 {
+  display: inline;
   color: var(--textlight);
+  font-size: 17px;
+}
 
+.con2 {
+  margin-top: 10px;
 }
-.con2{
-  
+
+.con3 {
+  margin-top: 10px;
 }
-.con3{
-  
-}
-.con4{
-  
+
+.con4 {
+  margin-top: 10px;
 }
 
 .contactright {
-  border: 2px solid violet ;
-
   grid-area: cright;
 }
-.con_line{
 
+.con_line {
+  border: var(--testsolid) solid 1px;
+  height: 100px;
+  width: 0px;
+  margin-left: 63px;
+  margin-top: 81px;
+  background-color: var(--testsolid);
+  position: absolute;
 }
-.con_text{
 
+.con_text {
+  background-color: var(--darkbg);
+  border: var(--darkbg) solid 3px;
+  border-radius: 5px;
+  font-size: 20px;
+  width: 100px;
+  padding: 1px 10px;
+  color: var(--testsolid);
+  transform: rotate(90deg);
+  margin-top: 0px;
+  margin-right: 20px;
+  position: relative;
 }
