@@ -10,6 +10,7 @@
   margin: 0px;
   padding: 0px;
   font-family: 'Nunito', sans-serif;
+
 }
 
 body {
@@ -619,6 +620,7 @@ header ul li {
 .contact {
   display: grid;
   grid-template-areas: 'cleft cleft ccenter ccenter cright';
+  margin-bottom: 100px;
 }
 
 .contactleft {
@@ -709,4 +711,92 @@ header ul li {
   margin-top: 0px;
   margin-right: 20px;
   position: relative;
+}
+
+/* footer */
+
+footer {
+  background-color: var(--darkbg);
+  display: grid;
+  grid-template-areas: 'lend rend';
+  height: 120px;
+}
+
+.leftend {
+  grid-area: lend;
+  padding-top: 40px;
+  margin-left: 170px;
+  position: absolute;
+}
+
+.thankbg {
+  background-color: var(--bg);
+  border-radius: 5px;
+  width: 100px;
+  margin-left: 10px;
+}
+
+.thnktext {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--testsolid);
+  text-align: center;
+}
+
+.thnkline {
+  border: 2px solid var(--prime);
+  background-color: var(--prime);
+  border-radius: 5px;
+  width: 90%;
+  margin-left: 1px;
+  margin-bottom: 1px;
+}
+
+.thank {
+  display: inline-block;
+}
+
+.thankhindi {
+  display: inline-block;
+}
+
+.thankgujarati {
+  display: inline-block;
+}
+
+
+
+.rightend {
+  grid-area: rend;
+}
+
+.byme {
+  position: absolute;
+  margin-left: 300px;
+  margin-top: 50px;
+}
+
+.bymetext {
+  display: inline;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: var(--testsolid);
+  margin-right: 15px;
+}
+
+.bymeimagebg {
+
+  display: inline-block;
+  background-color: var(--prime);
+  border-radius: 5px;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  margin-top: -6px;
+}
+
+.bymeimagebg img {
+  margin-top: 5px;
+  margin-left: 5px;
 }
