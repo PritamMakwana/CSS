@@ -1,0 +1,113 @@
+ 
+ 
+ //1.shedhow---------------
+ <style>
+        .leftbox {
+  background-color: white;
+  border: 2px solid white;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		}
+    </style>
+
+	
+	2.text line limit--------------
+	.truncate-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Limit the text to three lines */
+  -webkit-box-orient: vertical;
+}
+
+3. a not effect-----------------
+ a {
+            text-decoration: none !important;
+}
+4.justify line word--------------
+div {
+  border: 1px solid black;
+  padding: 10px;
+  width: 200px;
+  height: 200px;
+  text-align: justify;
+}
+
+// 5. scorll bar give-------------
+.desc-scorll{
+    overflow-y:scroll;
+    height:100px;
+    text-align: justify;
+    /*width:350px !important;*/
+}
+hide scorll bar
+   *::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+<style>
+   @media only screen and (max-width: 600px) {
+            .imgdivyour {
+                margin:0px !important;
+            }
+            .shop_image-rp{
+                padding-right: 0px !important;
+                padding-left: 0px !important;
+                border-radius: 25px !important;
+            }
+    }
+	@media (min-width: 768px) and (max-width: 768px) {
+  .banner-img-s2 {
+    height: 560px;
+    width: 56%;
+    margin-left: 175px;
+  }
+}
+</style>
+
+<div class="text-nowrap bd-highlight" style="width: 8rem;">
+  This text should overflow the parent.
+</div>
+<p class="text-break">mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm</p>
+
+6------------------
+carachar limit with ttolt tip hover sow link
+<a style="color: black; white-space:nowrap; text-align:center;"
+                                        href="{{ url('shop-receipt/' . $item->order_id) }}" data-toggle="tooltip" data-placement="top" title="{{$item->shop->name}}" onmouseover="this.style.color='blue'; this.style.textDecoration='underline !important';" onmouseout="this.style.color='black'; this.style.textDecoration='none';" class=" unishopt text-break text-wrap">
+                                         {{ \Illuminate\Support\Str::limit($item->shop->name, 30, '...') }}</a>
+										 
+7------------------------
+description hover show fill
+
+<style>
+    .truncate-text {
+        max-width: 200px;
+        /* Adjust the width as needed */
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        transition-delay: 1s;
+    }
+
+    .full-text {
+        display: none;
+    }
+
+    .description-cell:hover .truncate-text {
+        display: none;
+    }
+
+    .description-cell:hover .full-text {
+        display: inline;
+    }
+</style>
+
+
+ <td class="description-cell">
+ <div class="truncate-text">{{$ctr->product()->withTrashed()->first()->description ??$ctr->product->description}}</div>
+ <div class="full-text">{{$ctr->product()->withTrashed()->first()->description ??$ctr->product->description}}</div>
+  </td>
+  
+  
+  

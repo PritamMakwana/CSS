@@ -1,0 +1,130 @@
+:root {
+  --orange-prime: #fd8606;
+  --black-bg: #000000;
+  --white-test: #ffffff;
+  --menu-text: #747474;
+}
+
+/* home header and footer css */
+* {
+  padding: 0%;
+  margin: 0%;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.bg-color {
+  background-color: var(--black-bg);
+}
+
+/* Navbar */
+
+.navbar-toggler-icon {
+  color: var(--white-test) !important;
+}
+
+.cart-number {
+  background-color: #ffd233;
+  color: white;
+  border-radius: 50%;
+  padding: 1px 5px;
+  font-size: 12px;
+}
+
+.nav-link-cstm {
+  font-family: Inter;
+  font-weight: 500;
+}
+
+.navbar-custom-buttons-login {
+  background-color: #f6feff;
+  border: none;
+  font-family: Inter;
+  font-weight: 500;
+  border-radius: 50px;
+}
+
+.navbar-custom-buttons-signup {
+  border-radius: 50px;
+  border: none;
+  font-family: Inter;
+  font-weight: 500;
+  background-color: #4deaff;
+  padding: 5px 10px;
+}
+
+.login-btn-a {
+  border-radius: 21px;
+  color: white;
+  padding: 12px 40px;
+  font-weight: bold;
+  font-size: small;
+  background-color: var(--orange-prime);
+  outline: none !important;
+  border-color: var(--orange-prime);
+}
+@media (max-width: 1000px) {
+  .login-btn-a {
+    padding: 10px 30px;
+    margin-right: 10px;
+  }
+}
+
+.select-pricing:focus,
+.select-pricing-o:focus {
+  outline: none !important;
+}
+.select-pricing:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+.select-pricing {
+  border-radius: 0 !important;
+  background-color: black !important;
+  color: var(--menu-text) !important;
+}
+
+.select-pricing-o:hover {
+  background-color: var(--orange-prime) !important;
+  color: var(--orange-prime) !important;
+}
+
+@media (max-width: 991px) {
+  .select-pri {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/* Navbar Ends Here */
+
+@media (max-width: 767px) {
+  .img-apple-google {
+    margin-left: 28%;
+    height: 40px !important;
+    width: 40%;
+    margin-top: 3px;
+    margin-right: 28%;
+  }
+}
+
+@media (max-width: 635px) {
+  .respo-task-creation {
+    margin-left: 10% !important;
+  }
+  .made-for-speed-text {
+    font-size: xx-large !important;
+  }
+  .redi-app-google {
+    height: 30px !important;
+  }
+  .big-on-features-text {
+    font-size: xx-large !important;
+  }
+  .big-features-parent {
+    margin-left: 5% !important;
+    margin-right: 5% !important;
+  }
+}

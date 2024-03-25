@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&family=Jost:wght@400;500;600;700;800;900&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,500&family=Red+Rose:wght@400;500;600&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Option 1: Include in HTML -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <!-- Link to Bootstrap JavaScript (optional if you need Bootstrap JS functionality) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.all.min.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <title>Audition</title>
+</head>
+
+<body class="bg-color">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg" style="background-color: #000000; ">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <img src="image/logo.png" alt="Logo" width="100">
+            </a>
+
+            <div class="d-lg-none d-flex justify-content-end align-items-center" style="margin-right: 15px;">
+
+                <button class="login-btn-a" onclick="window.location='#'">Login</button>
+
+                <!-- Navbar Toggler for Mobile -->
+                <button style="border: none;background-color: #ffffff;" class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <!-- Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav" style="text-align:center;">
+                    <li class="nav-item me-2">
+                        <a style="color: #747474" class="nav-link nav-link-cstm" href="#">Services</a>
+                    </li>
+                    <li class="nav-item me-2">
+                        <a style="color: #747474" class="nav-link nav-link-cstm" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item me-2 select-pri">
+                        <select style="color: #747474;margin-top: 2px;" class="nav-link nav-link-cstm select-pricing">
+                            <option class="select-pricing-o" selected>Pricing</option>
+                            <option class="select-pricing-o" value="1">One</option>
+                            <option class="select-pricing-o" value="2">Two</option>
+                            <option class="select-pricing-o" value="3">Three</option>
+                        </select>
+                    </li>
+                    <li class="nav-item me-2">
+                        <a style="color: #747474" class="nav-link nav-link-cstm" href="#">Contact Us</a>
+                    </li>
+                    <li class="nav-item me-2">
+                        <a style="color: #747474" class="nav-link nav-link-cstm" href="#">About Us</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="d-none d-lg-block">
+                <ul class="navbar-nav ml-auto align-items-center">
+
+                    <li class="nav-item dropdown">
+                        <button class="login-btn-a" onclick="window.location='#'">Login</button>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+    <!--Navbar End-->
+
+    <!-- welcome -->
+    <div class="container-fulid">
+        <div class="col">
+            <div class="d-flex justify-content-center mt-5">
+                <h1 style="color:var(--white-test);font-weight: 700;">Welcome To Im Booked <br>Your Audition Organizer
+                </h1>
+            </div>
+        </div>
+        <div class="col">
+            <div class="d-flex justify-content-center mt-3">
+                <p style="color:var(--white-test);text-align: center;width:90%;    font-weight: 100;
+                font-size: 16px;"> We help you schedule auditions and
+                    organize
+                    your audition listings. <br>With ImBooked, you can easily manage your auditions and keep<br> track
+                    of your
+                    upcoming Auditions.</p>
+            </div>
+        </div>
+        <div class="col">
+            <div class="d-flex row-flex justify-content-center mt-2">
+                <div class="me-2"><img class="redi-app-google"  height="40" src="image/apple-btn.png" alt="appstore button"
+                        onclick="window.location='https://apps.apple.com/in/app/imbookedapp/id6473156910'"></div>
+                <div class="ms-2"><img class="redi-app-google" style="border: 0px white solid;border-radius: 5px;" height="40" src="image/google-btn.png" alt="playstore button"
+                        onclick="window.location='https://play.google.com/store/apps/details?id=com.quantum.imbooked&pli=1'">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- welcom end-->
+
+    <!-- banner -->
+    <div class="container-fulid mt-5">
+        <div class="me-2"><img style="width: 100%;height:auto;" src="image/banner-image.png" alt="Banner"></div>
+    </div>
+    <!-- banner end-->
+
+
+    <!-- Task Creation -->
+    <div class="container-fulid mt-2 respo-task-creation" style="margin-left: 20%;">
+        <div class="col">
+            <div class="d-flex justify-content-start">
+                <p style="color:var(--orange-prime);margin-bottom: -5px;font-weight: 100;
+                font-size: 16px;">Task Creation</p>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="d-flex justify-content-start">
+                <h1 class="made-for-speed-text" style="color:var(--white-test);font-size: -webkit-xxx-large;">Made for speed</h1>
+            </div>
+        </div>
+        <div class="col">
+            <div class="d-flex justify-content-start me-1">
+                <p style="color:var(--white-test);text-align: start;font-weight: 100;
+                font-size: 16px;"> Doo uses a set of custom keyboards to
+                    keep controls<br> within reach. Create one-off tasks or future<br>appointments with ease. No
+                    interruption.
+                    No fuss.</p>
+            </div>
+        </div>
+    </div>
+    <!-- Task Creation end-->
+
+
+    <!-- moblie banner -->
+    <div class="container-fulid mt-5">
+        <div class="me-2"><img style="width: 100%;height:auto;" src="image/phone-banner.png" alt="Banner"></div>
+    </div>
+    <!--moblie banner end-->
+
+    <!-- features -->
+    <div class="container-fulid mt-5 big-features-parent" style="margin-left: 10%;margin-right:10%;">
+        <div class="d-flex flex-md-row flex-column" style="justify-content: space-evenly !important;
+        align-items: flex-start !important;">
+            <!-- 1 -->
+            <div class="d-flex flex-column">
+                <div class="d-flex flex-row">
+                    <h1 class="big-on-features-text" style="color:var(--white-test);font-size: -webkit-xxx-large;">Big on features.<br>Deceptively
+                        simple.</h1>
+                </div>
+                <div class="d-flex flex-row mt-3 mb-5">
+                    <button class="login-btn-a" onclick="window.location='#'">Download</button>
+                </div>
+            </div>
+            <!-- 1 -->
+
+            <div class="d-flex flex-column">
+
+                <!-- 2 -->
+                <div class="d-flex flex-row mb-3 ">
+                    <div class="d-flex flex-column me-2">
+                        <img src="image/o-folder.png" alt="icon" height="45" width="60">
+                    </div>
+                    <div class="d-flex flex-column mb-3">
+                        <div class="d-flex flex-row">
+                            <p style="color:var(--orange-prime);text-align: start;font-weight: bold;
+                        font-size: 15px;">View Portfolio</p>
+                        </div>
+                        <div class="d-flex flex-row">
+                            <p style="color:var(--white-test);text-align: start;font-weight: 100;
+                        font-size: 15px;margin-top:-15px;"> Use Siri to create tasks, a new list, or mark items
+                                completed.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex flex-row mb-3">
+                    <div class="d-flex flex-column me-2">
+                        <img src="image/o-gallery.png" alt="icon" height="50">
+                    </div>
+                    <div class="d-flex flex-column">
+                        <div class="d-flex flex-row">
+                            <p style="color:var(--orange-prime);text-align: start;font-weight: bold;
+                        font-size: 15px;">My Gallery</p>
+                        </div>
+                        <div class="d-flex flex-row">
+                            <p style="color:var(--white-test);text-align: start;font-weight: 100;
+                        font-size: 15px;margin-top:-15px;"> Keep tabs on upcoming or due reminders with small, medium,
+                                and large widgets.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex flex-row mb-3 ">
+                    <div class="d-flex flex-column me-2">
+                        <img src="image/o-track.png" alt="icon" height="50">
+                    </div>
+                    <div class="d-flex flex-column">
+                        <div class="d-flex flex-row">
+                            <p style="color:var(--orange-prime);text-align: start;font-weight: bold;
+                        font-size: 15px;">Track Auditions</p>
+                        </div>
+                        <div class="d-flex flex-row">
+                            <p style="color:var(--white-test);text-align: start;font-weight: 100;
+                        font-size: 15px;margin-top:-15px;">Using your Apple ID to sync tasks between your iOS and Mac
+                                devices.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex flex-row mb-3">
+                    <div class="d-flex flex-column me-2">
+                        <img src="image/o-call.png" alt="icon" height="50">
+                    </div>
+                    <div class="d-flex flex-column">
+                        <div class="d-flex flex-row">
+                            <p style="color:var(--orange-prime);text-align: start;font-weight: bold;
+                        font-size: 15px;">Call Casting Director</p>
+                        </div>
+                        <div class="d-flex flex-row">
+                            <p style="color:var(--white-test);text-align: start;font-weight: 100;
+                        font-size: 15px;margin-top:-15px;">Full iPad support including multitasking with Split View and
+                                Slide Over.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex flex-row ">
+                    <div class="d-flex flex-column me-2">
+                        <img src="image/o-navigrate.png" alt="icon" height="55" width="50">
+                    </div>
+                    <div class="d-flex flex-column">
+                        <div class="d-flex flex-row">
+                            <p style="color:var(--orange-prime);text-align: start;font-weight: bold;
+                        font-size: 15px;">Navigate To Shoot Location</p>
+                        </div>
+                        <div class="d-flex flex-row">
+                            <p style="color:var(--white-test);text-align: start;font-weight: 100;
+                        font-size: 15px;margin-top:-15px;">Dynamic Type and VoiceOver support create a more universal
+                                experience for all.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 2 -->
+            </div>
+
+
+        </div>
+    </div>
+    <!--features end-->
+
+    <!-- download today free -->
+    <div class="container-fulid" style="margin:10% 0% 10% 0%;">
+        <div style="background-color: var(--orange-prime);margin-left: 15%;margin-right: 15%;padding: 2% 0% 4% 0%;
+        border-radius: 26px;">
+            <div class="col">
+                <div class="d-flex justify-content-center mt-5">
+                    <p style="color:var(--black-bg);font-weight: 500;margin-bottom:-10px;">Download today for free</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="d-flex justify-content-center mt-3">
+                    <h2 style="color:var(--white-test);text-align: center;font-weight: blod;
+                    ">Track and remind yourself about<br> the important things with beautiful<br>
+                        countdown & progress bar widgets.</h2>
+                </div>
+            </div>
+            <div class="col">
+                <div class="d-flex  flex-md-row flex-column justify-content-center mt-3">
+                    <div class="d-flex flex-column"><img class="img-apple-google" style="height: 40px;margin-right:4%"
+                            src="image/apple-btn-o.png" alt="appstore button"
+                            onclick="window.location='https://apps.apple.com/in/app/imbookedapp/id6473156910'"></div>
+                    <div class="d-flex flex-column "><img class="img-apple-google" style="height: 40px;"
+                            src="image/google-btn-o.png" alt="playstore button"
+                            onclick="window.location='https://play.google.com/store/apps/details?id=com.quantum.imbooked&pli=1'">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- download today free end-->
+
+
+    <hr style="border:1px var(--orange-prime) solid;margin-top:-20px;">
+
+
+    <!-- footer -->
+
+    <div class="container-fulid mt-5" style="margin-left: 10%;margin-right:10%;">
+        <div class="container-fluid mt-5">
+            <div class="row justify-content-around">
+                <div class="col-12 col-sm-6 col-md-4">
+                    <a href="#" style="color: var(--white-test);">Privacy Policy</a>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4">
+                    <a href="#" style="color: var(--white-test);">Terms & Conditions of Use</a>
+                </div>
+                <div class="col-12 col-md-4">
+                    <p style="color:var(--white-test);text-align: start;font-weight: bold;
+                    font-size: 15px;">© Copyrights Reserved © 2024 ImBooked</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- end footer -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"
+        integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
+        </script>
+
+</body>
+
+</html>
